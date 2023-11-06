@@ -8,6 +8,7 @@ import java.sql.*;
 import database.Db;
 import beans.User;
 import models.UserModel;
+import utility.CookieUtility;
 
 @WebServlet("/register")
 public class RegisterServlet extends HttpServlet {
@@ -15,6 +16,12 @@ public class RegisterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         System.out.println("The GET request has been made to register");
+
+        String userId = CookieUtility.getUserId(request, response);
+        if(!userId.equalsIgnoreCase("0")){
+            response.sendRedirect("/home");
+            return;
+        }
 
         request.getRequestDispatcher("/WEB-INF/jsp/register.jsp").forward(request, response);
     }

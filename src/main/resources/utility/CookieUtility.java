@@ -13,6 +13,10 @@ public class CookieUtility {
         Cookie[] cookies = request.getCookies();
         String userId = "0";
 
+        if(cookies == null){
+            return userId;
+        }
+
         for (Cookie cookie: cookies) {
             if(cookie.getName().equalsIgnoreCase("userId")){
                 userId = cookie.getValue();

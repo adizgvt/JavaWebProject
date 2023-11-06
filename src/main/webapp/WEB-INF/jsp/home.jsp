@@ -23,8 +23,16 @@
         </div>
     </div>
 </nav>
-<div class="row mx-3 my-5 bg-light">
-    <div class="card mx-3 my-5" style="width: 25rem;">
+<div class="row mx-2 my-2 bg-light">
+    <div class="card mx-3 my-3 p-3" style="width: 25rem;">
+        <img src="https://images.theconversation.com/files/49135/original/22qc7r28-1400667334.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Subjects</h5>
+            <p class="card-text">Manage my subjects.</p>
+            <a href="/subject" class="btn btn-primary">Go</a>
+        </div>
+    </div>
+    <div class="card mx-3 my-3 p-3" style="width: 25rem;">
         <img src="https://images.theconversation.com/files/49135/original/22qc7r28-1400667334.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&fit=clip" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Subjects</h5>

@@ -54,7 +54,9 @@
             <label for="password_confirmation" class="form-label">Password Confirmation</label>
             <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation" value="<%=request.getAttribute("password_confirmation") == null ? "" : request.getAttribute("password_confirmation")%>">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
     </form>
 </div>
 </body>
