@@ -25,7 +25,7 @@
 </nav>
 <div class="mx-3 my-5">
     <div class="d-flex justify-content-center mb-3">
-        <h1>Login</h1>
+        <h1>Login Page</h1>
     </div>
     <%if(request.getAttribute("error") != null) {%>
     <div class="alert alert-danger" role="alert">
